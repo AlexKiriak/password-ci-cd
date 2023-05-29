@@ -32,5 +32,5 @@ jobs:
     - name: Deploy to EKS
       run: |
         aws eks update-kubeconfig --region ${{ secrets.AWS_REGION }} --name password-ci-cd-cluster
-        kubectl apply -f deployment.yml
-        kubectl apply -f service.yml
+        kubectl apply -f kubernetes/deployment.yml
+        kubectl apply -f kubernetes/service.yml
