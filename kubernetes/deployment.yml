@@ -16,4 +16,4 @@ spec:
         - name: html-container
           image: 506651622395.dkr.ecr.eu-west-2.amazonaws.com/password-ci-cd:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 80
